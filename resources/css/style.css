@@ -1,0 +1,87 @@
+#referenceEmiSlider {
+	overflow: hidden;
+	position: fixed;
+	right: -75px;
+	bottom: 10px;
+	z-index: 10000
+}
+
+#referenceEmiSlider.drop-shadow {
+	background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	float: left;
+	margin: 2em 10px 1em;
+	padding: 5px 5px;
+	position: fixed;
+	width: 45px;
+	height: 15px;
+    box-sizing: initial;
+}
+
+#referenceEmiSlider.lifted {
+	border-radius: 4px 4px 4px 4px;
+}
+
+#referenceEmiSlider.lifted:before,#referenceEmiSlider.lifted:after {
+	bottom: 15px;
+	box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+	height: 20%;
+	left: 10px;
+	transform: rotate(-3deg);
+	width: 50%;
+}
+
+#referenceEmiSlider.lifted:after {
+	left: auto;
+	right: 10px;
+	transform: rotate(3deg);
+}
+
+#referenceEmiSlider .selectorToggle {
+	float: right;
+	width: 16px;
+	padding: 0;
+	font-size: 17px;
+	line-height: 14px;
+	cursor: pointer;
+	font-weight: bold;
+	height: 15px;
+	border: 1px solid #ddd;
+	color: #777;
+	text-align: center;
+}
+
+#referenceEmiSlider .selectorTotalBox {
+	cursor: pointer;
+	float: left;
+	height: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+    line-height: 20px;
+}
+
+#referenceEmiSlider .selectorTitle {
+	float: left;
+	margin: 0 0 0 2px;
+	padding: 0 0 0 0px;
+	font-size: 12px;
+	line-height: 20px;
+	cursor: default;
+	height: 15px;
+	color: #777;
+}
+
+#referenceEmiSlider .selectorInner {
+	overflow: auto;
+	width: 100%;
+	display: block;
+	padding: 5px 5px;
+	font-size: 12px;
+}
+
+#referenceEmiSlider .selectorInner div {
+	display: block; } #referenceEmiSlider   .selectorTime {
+	float: right;
+	margin-right: 5px;
+}

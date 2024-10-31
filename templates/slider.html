@@ -1,0 +1,22 @@
+<div id="referenceEmiSlider" title="{{boxTitle}}" class="drop-shadow lifted">
+	<div class=selectorToggle title="Toggle">+</div>
+	<span class="selectorTotalBox">{{totalMissedPosts}}</span>
+	<div class="selectorTitle">{{boxTitle}}</div>
+	<div class="selectorInner" style="height:{{boxInnerHeight}}px;">
+		{{#posts}}
+  		<div>
+   			<span class="selectorTime">{{dateHuman}} ago</span>
+   			<a href="{{link}}" style="">{{title}}</a>
+  		</div>
+		{{/posts}}
+
+		{{^posts}}
+  			{{boxNoPostText}}
+		{{/posts}}
+		
+	</div>
+</div> 
+
+<script>
+var EmiSliderBox = {width: {{boxWidth}},height: {{boxHeight}},totalMissedPosts: {{totalMissedPosts}},splashAnimation: {{splashAnimation}}};
+</script>
